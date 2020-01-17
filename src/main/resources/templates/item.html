@@ -47,7 +47,7 @@
     <div class="col-sm-8 blog-item">
       <div class="page-header">
         <h2 th:text="${blog.title}">Cum sociis</h2>
-        <p class="blog-post-meta" th:text="${#dates.format(blog.createdTime, 'yyyy-MM-dd')}">2015年2月3日 标签：<a href="#">Web开发</a></p>
+        <p class="blog-post-meta" th:text="${#dates.format(blog.createdTime, 'yyyy年MM月dd日 HH:mm:ss')}">2015年2月3日 标签：<a href="#">Web开发</a></p>
       </div>
 
       <div class="post-content" th:utext="${blog.content}">
@@ -127,7 +127,7 @@
               -->
             <p>
               <a href="#" th:text="${comment.userId}">"${comment.userId}",</a>
-              <span class="text-muted date" th:text="${comment.createdTime}"> "${comment.createdTime}"</span>
+              <span class="text-muted date" th:text="${#dates.format(comment.createdTime, 'yyyy年MM月dd日 HH:mm:ss')}"> "${comment.createdTime}"</span>
               <textarea disabled th:text="${comment.content}">"${comment.content}"</textarea>
             </p>
           </li>

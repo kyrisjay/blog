@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="/css/sidbar.css">
   <link rel="stylesheet" href="/css/blog.css">
   <link rel="stylesheet" href="/css/highlight.css">
-  <link rel="stylesheet" href="/lib/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <link rel="stylesheet" href="/lib/tagify/jquery.tagify.css"/>
+  <link rel="stylesheet" href="/lib/bootstrap-wysihtml5/bootstrap3-wysihtml5.css">
+  <link rel="stylesheet" href="/lib/tagify/jquery.tagify.min.css"/>
   <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
   <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="/lib/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-  <script src="/lib/tagify/jquery.tagify.min.js"></script>
+  <script src="/lib/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js"></script>
+  <script src="/lib/tagify/jquery.tagify.js"></script>
 </head>
 
 <body>
@@ -57,15 +57,15 @@
       <form class="form-create-blog" method="post" action="/blogs">
         <div class="form-group">
           <label for="title">标题</label>
-          <input type="text" class="form-control" id="title" placeholder="文章的标题" autofocus="">
+          <input type="text" class="form-control" name="title" id="title" placeholder="文章的标题" autofocus="">
         </div>
         <div class="form-group">
           <label for="title">标签</label><p>
-          <input type="text" class="form-control" id="tag" placeholder="标签" autofocus="">
+          <input type="text" class="form-control" name="tag" id="tag" placeholder="标签" autofocus="">
         </div>
         <div class="form-group">
           <label for="content">内容</label>
-          <textarea class="form-control" id="content" placeholder="文章的内容" rows="18"></textarea>
+          <textarea class="form-control" id="content" name="content" placeholder="文章的内容" rows="18"></textarea>
         </div>
         <button type="submit" class="btn pull-right btn-primary">保存</button>
       </form>
@@ -75,7 +75,7 @@
     <div class="col-sm-3 col-sm-offset-1">
       <div class="sidebar-module sidebar-module-inset">
         <div class="avatar">
-<!--          <img class="img-circle img-rounded img-thumbnail avatar" src="static/img/catty.jpeg">-->
+          <!--          <img class="img-circle img-rounded img-thumbnail avatar" src="static/img/catty.jpeg">-->
           <img class="img-circle img-rounded img-thumbnail avatar" src="/img/catty.jpeg">
           <div>
             <h4>Lorem</h4>

@@ -80,10 +80,10 @@
 
       <nav>
         <ul class="pager">
-          <li th:if="${blogs.hasPreviousPage}" class="previous"><a th:href="@{'/users/'+ ${user.name} + '?page=' + ${blogs.prePage}}"><span aria-hidden="true">&larr;</span> 上一页</a></li>
-          <li th:if="${blogs.hasNextPage}" class="next"><a th:href="@{'/users/'+ ${user.name} + '?page=' + ${blogs.nextPage}}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
-<!--          <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>-->
-<!--          <li th:unless=${blogs.last} class="next"><a th:href="@{'/blogs?page=' + ${blogs.number + 1}}">下一页 <span aria-hidden="true">&rarr;</span></a></li>-->
+          <li th:if="${blogs.hasPreviousPage}" class="previous"><a th:href="@{'/user/'+ ${user.name} + '?page=' + ${blogs.prePage}}"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+          <li th:if="${blogs.hasNextPage}" class="next"><a th:href="@{'/user/'+ ${user.name} + '?page=' + ${blogs.nextPage}}">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+          <!--          <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>-->
+          <!--          <li th:unless=${blogs.last} class="next"><a th:href="@{'/blogs?page=' + ${blogs.number + 1}}">下一页 <span aria-hidden="true">&rarr;</span></a></li>-->
         </ul>
       </nav>
 
